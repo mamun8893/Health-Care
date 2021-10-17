@@ -13,6 +13,7 @@ const Services = () => {
           <p>Our services</p>
           <h2>What We’re Offering</h2>
         </div>
+        {/* All Services */}
         <div className="services-warper">
           <Row>
             {services.map((service) => (

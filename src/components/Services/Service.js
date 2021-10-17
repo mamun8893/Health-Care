@@ -1,5 +1,6 @@
 import React from "react";
-import { Col } from "react-bootstrap";
+import { Button, Col } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Service = (props) => {
   const { id, name, image, shortDescription } = props.service;
@@ -12,6 +13,9 @@ const Service = (props) => {
         <div className="service-content">
           <h3>{name}</h3>
           <p>{shortDescription.slice(0, 100)}</p>
+          <a href="/" className="details-btn">
+            Details
+          </a>
         </div>
       </div>
     </Col>

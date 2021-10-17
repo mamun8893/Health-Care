@@ -63,3 +63,12 @@
   font-weight: 600;
   transition: all 0.4s;
 }
+
+.details-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1ac167;
+  font-weight: 700;
+  margin-top: 5px;
+  display: inline-block;
+}
