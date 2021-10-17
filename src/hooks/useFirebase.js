@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import swal from "sweetalert";
-import { useHistory } from "react-router-dom";
+
 import initializeAuth from "../firebase/firebase.init";
 import {
   getAuth,
@@ -16,7 +16,7 @@ const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
   const auth = getAuth();
-  const history = useHistory();
+
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       console.log(user);
@@ -51,8 +51,7 @@ const useFirebase = () => {
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
       const user = userCredential.user;
       setUser(user);
-      history.push("/");
-      swal("Login Successfully", "success");
+      swal("Good Job!", "Login Successfully", "success");
     });
   };
 
