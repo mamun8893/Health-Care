@@ -16,8 +16,8 @@ const Banner = () => {
             your healthy life
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            We at MediHealth Care are always fully focused on helping your child
+            and you to overcame any hurdle
           </p>
           <div className="btn-box">
             <a href="/" className="btn1 btn">

@@ -30,7 +30,7 @@ const Header = () => {
               </Nav.Link>
             )}
             <Nav.Link>
-              {user.displayName && `Signed in as: ${user.displayName}`}
+              {user?.displayName && `Signed in as: ${user?.displayName}`}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

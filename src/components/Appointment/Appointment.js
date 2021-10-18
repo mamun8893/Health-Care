@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 const Appointment = () => {
   return (
     <div className="appointment-area">
+      {/* Breadcumb  */}
       <div
         className="breadcumb-area"
         style={{ backgroundImage: `url(${breadcumbBg})` }}
@@ -22,6 +23,7 @@ const Appointment = () => {
           </div>
         </Container>
       </div>
+      {/* Appointment form */}
       <div className="appoint-form">
         <Container>
           <div className="heading text-center">

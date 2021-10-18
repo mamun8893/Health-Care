@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 const Contact = () => {
   return (
     <div className="contact-area">
+      {/* Breadcumb */}
       <div
         className="breadcumb-area"
         style={{ backgroundImage: `url(${breadcumbBg})` }}
@@ -23,6 +24,7 @@ const Contact = () => {
           </div>
         </Container>
       </div>
+      {/* Contact form */}
       <Container>
         <div className="contact-form-warper">
           <div className="heading text-center">

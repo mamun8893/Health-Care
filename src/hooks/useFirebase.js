@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import swal from "sweetalert";
-
 import initializeAuth from "../firebase/firebase.init";
 import {
   getAuth,
@@ -21,17 +20,7 @@ const useFirebase = () => {
   const googleProvider = new GoogleAuthProvider();
   const auth = getAuth();
 
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      console.log(user);
-      if (user) {
-        setUser(user);
-      } else {
-        setUser({});
-      }
-      setIsloading(false);
-    });
-  }, []);
+  // Email Password Signup
 
   const handleSignup = (email, password, name) => {
     setIsloading(true);
@@ -49,6 +38,9 @@ const useFirebase = () => {
       })
       .finally(() => setIsloading(false));
   };
+
+  // Email Password Signin
+
   const handleSignin = (email, password) => {
     setIsloading(true);
     signInWithEmailAndPassword(auth, email, password)
@@ -63,6 +55,8 @@ const useFirebase = () => {
       .finally(() => setIsloading(false));
   };
 
+  // Google Signin
+
   const handleGoogleSignin = () => {
     setIsloading(true);
     signInWithPopup(auth, googleProvider)
@@ -75,6 +69,21 @@ const useFirebase = () => {
       })
       .finally(() => setIsloading(false));
   };
+
+  //Auth State Change
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser({});
+      }
+      setIsloading(false);
+    });
+  }, []);
+
+  // Signout
 
   const handleLogout = () => {
     setIsloading(true);

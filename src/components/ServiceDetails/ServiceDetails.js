@@ -12,6 +12,7 @@ const ServiceDetails = () => {
   const serviceItem = services?.find((service) => service.id == serviceId);
   return (
     <div className="service-details-area">
+      {/* Breadcumb */}
       <div
         className="breadcumb-area"
         style={{ backgroundImage: `url(${breadcumbBg})` }}
@@ -28,9 +29,11 @@ const ServiceDetails = () => {
           </div>
         </Container>
       </div>
+
       <Container>
         <div className="service-details-warper">
           <Row>
+            {/* Service details left */}
             <Col md={3}>
               <div className="service-details-left">
                 <ul>
@@ -43,6 +46,7 @@ const ServiceDetails = () => {
                 </ul>
               </div>
             </Col>
+            {/* Service details Right */}
             <Col md={9}>
               <div className="service-details-right">
                 <div className="servide-details-image">
