@@ -13,9 +13,9 @@ const Service = (props) => {
         <div className="service-content">
           <h3>{name}</h3>
           <p>{shortDescription.slice(0, 100)}</p>
-          <a href="/" className="details-btn">
+          <NavLink to={`/service-details/${id}`} className="details-btn">
             Details
-          </a>
+          </NavLink>
         </div>
       </div>
     </Col>

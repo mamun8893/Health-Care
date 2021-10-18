@@ -7,6 +7,8 @@ import NotFound from "./components/NotFound/NotFound";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
 import AuthProvide from "./context/AuthProvide";
+import ServiceDetails from "./components/ServiceDetails/ServiceDetails";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+            <PrivateRoute path="/service-details/:serviceId">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
