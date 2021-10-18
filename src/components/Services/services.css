@@ -72,3 +72,18 @@
   margin-top: 5px;
   display: inline-block;
 }
+
+/**Responsive CSS**/
+
+@media only screen and (max-width: 767.98px) {
+  .service-area {
+    padding: 60px 0px 40px 0px;
+    background-color: rgb(246, 246, 246);
+  }
+  .service-image img {
+    width: 100%;
+  }
+  .service-item .service-content {
+    padding: 20px;
+  }
+}

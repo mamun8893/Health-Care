@@ -8,76 +8,76 @@ const Footer = () => {
       <Container>
         <div className="footer-top-area">
           <Row>
-            <Col md={3}>
+            <Col md={3} sm={6}>
               <div className="footer-link">
                 <h4>Our Services</h4>
                 <ul>
                   <li>
-                    <a href="#">Dental Surgery</a>
+                    <a href="#dental">Dental Surgery</a>
                   </li>
                   <li>
-                    <a href="/">Cancer Oncology</a>
+                    <a href="#cancer">Cancer Oncology</a>
                   </li>
                   <li>
-                    <a href="/">Neurology</a>
+                    <a href="#neurology">Neurology</a>
                   </li>
                   <li>
-                    <a href="/">Drug / Medicine</a>
+                    <a href="#drag">Drug / Medicine</a>
                   </li>
                   <li>
-                    <a href="/">Pregnancy & Births</a>
+                    <a href="#pregency">Pregnancy & Births</a>
                   </li>
                   <li>
-                    <a href="/">Endocrinology</a>
+                    <a href="#endocrinology">Endocrinology</a>
                   </li>
                 </ul>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={3} sm={6}>
               <div className="footer-link">
                 <h4>Our Doctors</h4>
                 <ul>
                   <li>
-                    <a href="/">Dr. Richard Seth</a>
+                    <a href="#doctor">Dr. Richard Seth</a>
                   </li>
                   <li>
-                    <a href="/">Dr. Naina Shah</a>
+                    <a href="#doctor">Dr. Naina Shah</a>
                   </li>
                   <li>
-                    <a href="/">Dr. John Deo</a>
+                    <a href="#doctor">Dr. John Deo</a>
                   </li>
                   <li>
-                    <a href="/">Dr. Ripple Dave</a>
+                    <a href="#doctor">Dr. Ripple Dave</a>
                   </li>
                   <li>
-                    <a href="/">Dr. Tanmay Rissol</a>
+                    <a href="#doctor">Dr. Tanmay Rissol</a>
                   </li>
                   <li>
-                    <a href="/">Dr. Thirtha Vyas</a>
+                    <a href="#doctor">Dr. Thirtha Vyas</a>
                   </li>
                 </ul>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={3} sm={6}>
               <div className="footer-link">
                 <h4>Our Clinic</h4>
                 <ul>
                   <li>
-                    <a href="/">Our Clinic</a>
+                    <a href="#client">Our Clinic</a>
                   </li>
                   <li>
-                    <a href="/">Photo Gallery</a>
+                    <a href="#gallery">Photo Gallery</a>
                   </li>
                   <li>
-                    <a href="/">Career</a>
+                    <a href="#career">Career</a>
                   </li>
                   <li>
-                    <a href="/">Testimonials</a>
+                    <a href="#testimonial">Testimonials</a>
                   </li>
                 </ul>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={3} sm={6}>
               <div className="footer-link">
                 <h4>Business Hours</h4>
                 <ul>

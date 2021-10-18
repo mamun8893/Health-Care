@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Service = (props) => {
   const { id, name, image, shortDescription } = props.service;
   return (
-    <Col md={4}>
+    <Col lg={4} md={6}>
       <div className="service-item">
         <div className="service-image">
           <img src={image} alt="" />

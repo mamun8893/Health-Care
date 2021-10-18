@@ -1,6 +1,10 @@
+.navbar-warper .navbar-collapse {
+  justify-content: flex-end;
+}
 .navbar-warper {
   background-color: #fff;
-  padding: 18px 0px;
+  padding: 20px 0px;
+  box-shadow: 0 15px 10px -15px rgb(0 0 0 / 4%);
 }
 .navbar-brand {
   color: #1ac167 !important;
@@ -11,4 +15,56 @@
   font-size: 18px !important;
   padding: 8px 16px !important;
   border-radius: 30px;
+  transition: all 0.5s;
+}
+.m-navbar .nav-link.active {
+  color: #1ac167 !important;
+}
+.m-navbar .nav-link:hover {
+  color: #1ac167 !important;
+}
+
+/**Responsive**/
+
+@media only screen and (max-width: 1199.98px) {
+  .m-navbar .nav-link {
+    font-size: 17px !important;
+    padding: 8px 14px !important;
+  }
+  .banner-content h1 {
+    font-size: 62px;
+  }
+  .banner-content p {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .banner-content h1 {
+    font-size: 54px;
+  }
+  .banner-content p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .banner-content h1 {
+    font-size: 48px;
+  }
+  .banner-content p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .banner-content h1 {
+    font-size: 34px;
+  }
+  .banner-content p {
+    font-size: 14px;
+  }
+  .btn-box .btn {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
 }

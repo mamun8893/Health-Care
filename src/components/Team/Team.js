@@ -16,7 +16,7 @@ const Team = () => {
         </div>
         <Row>
           {/* Team Item 1*/}
-          <Col md={3}>
+          <Col lg={3} md={4} sm={6}>
             <div className="team-item text-center">
               <div className="team-image">
                 <img src={teamImg1} alt="" />
@@ -28,7 +28,7 @@ const Team = () => {
             </div>
           </Col>
           {/* Team Item 2*/}
-          <Col md={3}>
+          <Col lg={3} md={4} sm={6}>
             <div className="team-item text-center">
               <div className="team-image">
                 <img src={teamImg2} alt="" />
@@ -40,7 +40,7 @@ const Team = () => {
             </div>
           </Col>
           {/* Team Item 3*/}
-          <Col md={3}>
+          <Col lg={3} md={4} sm={6}>
             <div className="team-item text-center">
               <div className="team-image">
                 <img src={teamImg3} alt="" />
@@ -52,7 +52,7 @@ const Team = () => {
             </div>
           </Col>
           {/* Team Item 4*/}
-          <Col md={3}>
+          <Col lg={3} md={4} sm={6}>
             <div className="team-item text-center">
               <div className="team-image">
                 <img src={teamImg4} alt="" />

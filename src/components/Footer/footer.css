@@ -39,3 +39,17 @@
   color: #fff;
   margin: 0;
 }
+
+/**Responsive**/
+
+@media only screen and (max-width: 767.98px) {
+  .footer-link {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .footer-link {
+    text-align: center;
+  }
+}

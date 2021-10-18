@@ -40,3 +40,8 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.service-detail-loader {
+  margin: auto;
+  justify-content: center;
+}

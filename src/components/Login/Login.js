@@ -30,7 +30,7 @@ const Login = () => {
     <div className="login-signup">
       <Container>
         <Row className="justify-content-center">
-          <Col md={5}>
+          <Col xl={5} lg={6} md={8}>
             <div className="login-signup-card">
               <Tabs
                 id="controlled-tab-example"
