@@ -1,7 +1,25 @@
 .login-signup {
   padding: 80px 0px;
+  background-color: rgb(246, 246, 246);
 }
-
+.login-signup-card {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+}
+.login-signup-card .nav-tabs {
+  justify-content: center;
+  border-bottom: none;
+}
+.login-signup-card .nav-link {
+  border: none;
+  color: #222222;
+}
+.login-signup-card .nav-link.active {
+  color: #1ac167;
+}
 .ic-login-singup-logo {
   text-align: center;
   margin-bottom: 40px;
@@ -30,6 +48,20 @@
   color: #fff;
 }
 
-.ic-form-text {
+.or-login-txt {
   text-align: center;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 10px;
+}
+.google-signup-btn {
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #1ac167;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.google-signup-btn img {
+  width: 25px;
+  margin-right: 10px;
 }
