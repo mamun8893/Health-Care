@@ -15,7 +15,6 @@ import {
 initializeAuth();
 const useFirebase = () => {
   const [user, setUser] = useState({});
-  const [error, setError] = useState("");
   const [isLoading, setIsloading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
   const auth = getAuth();
@@ -30,7 +29,11 @@ const useFirebase = () => {
         updateProfile(auth.currentUser, {
           displayName: name,
         }).then(() => {
-          swal("Good Job!", "Accoutn Has Been Created", "success");
+          swal("Good Job!", "Accoutn Has Been Created", "success").then(
+            function () {
+              window.location.reload(true);
+            }
+          );
         });
       })
       .catch((error) => {
@@ -62,6 +65,7 @@ const useFirebase = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
+
         swal("Good Job!", "Login Successfully", "success");
       })
       .catch((error) => {
@@ -100,7 +104,7 @@ const useFirebase = () => {
     handleGoogleSignin,
     handleLogout,
     user,
-    error,
+
     isLoading,
   };
 };

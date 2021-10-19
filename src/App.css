@@ -43,5 +43,6 @@ body {
 
 .service-detail-loader {
   margin: auto;
-  justify-content: center;
+  display: block !important;
+  text-align: center;
 }

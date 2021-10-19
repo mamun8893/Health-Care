@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import NotFound from "./components/NotFound/NotFound";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
 import AuthProvide from "./context/AuthProvide";
 import ServiceDetails from "./components/ServiceDetails/ServiceDetails";
@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <AuthProvide>
-        <Router>
+        <BrowserRouter>
           <Header></Header>
           <Switch>
             <Route exact path="/">
@@ -43,7 +43,7 @@ function App() {
             </Route>
           </Switch>
           <Footer></Footer>
-        </Router>
+        </BrowserRouter>
       </AuthProvide>
     </div>
   );
