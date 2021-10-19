@@ -6,9 +6,8 @@ It is a single page application made with ReactJS, React Bootstrap,Route, Fireba
 
 - Load Data from json file and show all Service in UI
 - Use Custom Hooks
-- Use Router
-- Use Private Router
-- Use Private Router
+- Use Route
+- Use Private Route
 - Firebase Authentication
 - Use Context Api
 
