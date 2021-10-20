@@ -21,7 +21,7 @@ const useFirebase = () => {
 
   // Email Password Signup
 
-  const handleSignup = (email, password, name) => {
+  const handleSignup = (email, password, name, navigate) => {
     setIsloading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -31,7 +31,8 @@ const useFirebase = () => {
         }).then(() => {
           swal("Good Job!", "Accoutn Has Been Created", "success").then(
             function () {
-              window.location.reload(true);
+              navigate();
+              window.location.reload();
             }
           );
         });
@@ -44,13 +45,15 @@ const useFirebase = () => {
 
   // Email Password Signin
 
-  const handleSignin = (email, password) => {
+  const handleSignin = (email, password, navigate) => {
     setIsloading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
         setUser(user);
-        swal("Good Job!", "Login Successfully", "success");
+        swal("Good Job!", "Login Successfully", "success").then(function () {
+          navigate();
+        });
       })
       .catch((error) => {
         swal("Something went wrong!", `${error.message}`, "error");
@@ -60,13 +63,14 @@ const useFirebase = () => {
 
   // Google Signin
 
-  const handleGoogleSignin = () => {
+  const handleGoogleSignin = (navigate) => {
     setIsloading(true);
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
-
-        swal("Good Job!", "Login Successfully", "success");
+        swal("Good Job!", "Login Successfully", "success").then(function () {
+          navigate();
+        });
       })
       .catch((error) => {
         swal("Something went wrong!", `${error.message}`, "error");

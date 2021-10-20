@@ -4,10 +4,12 @@ import googleImg from "../../images/google.png";
 import { Button, Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
+import { useHistory } from "react-router";
 
 const Login = () => {
   const { handleSignin, handleSignup, handleGoogleSignin } = useAuth();
   const [key, setKey] = useState("login");
+  const history = useHistory();
   const {
     register,
     handleSubmit,
@@ -18,12 +20,21 @@ const Login = () => {
     formState: { errors: errors2 },
     handleSubmit: handleSubmit2,
   } = useForm();
+
+  const navigate = () => {
+    history.push("/home");
+  };
+
   const onSubmit = (data) => {
-    handleSignin(data.email, data.password);
+    handleSignin(data.email, data.password, navigate);
   };
 
   const onSubmitSignup = (data) => {
-    handleSignup(data.email, data.password, data.name);
+    handleSignup(data.email, data.password, data.name, navigate);
+  };
+
+  const handleGsignin = () => {
+    handleGoogleSignin(navigate);
   };
 
   return (
@@ -61,7 +72,7 @@ const Login = () => {
                       </div>
                       <div
                         className="google-signup-btn"
-                        onClick={handleGoogleSignin}
+                        onClick={handleGsignin}
                       >
                         <img src={googleImg} alt="" />
                         <span>Sign in With Google </span>

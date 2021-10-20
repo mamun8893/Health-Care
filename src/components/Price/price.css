@@ -1,0 +1,73 @@
+.price-area-content-warper {
+  padding: 80px 0px;
+}
+
+.price-list-waarper h2 {
+  margin-bottom: 40px;
+}
+.price-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.price-list ul li {
+  list-style: none;
+  font-weight: 600;
+  color: #0b114a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border-bottom: 1px solid #2a2f4126;
+}
+.price-list ul li:first-child {
+  border-top: 1px solid #2a2f4126;
+}
+.price-list ul li span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.price-working-hours {
+  background-color: #0b114a;
+  padding: 40px;
+}
+.price-working-hours h4 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.price-working-hours ul {
+  margin: 0;
+  padding: 0px;
+}
+
+.price-working-hours ul li {
+  color: #fff;
+  list-style-type: none;
+  padding: 10px 0px;
+  border-bottom: 1px solid #1f255e;
+}
+
+/**Responsive**/
+
+@media only screen and (max-width: 991.98px) {
+  .price-working-hours {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .price-area-content-warper {
+    padding: 60px 0px;
+  }
+  .price-list-waarper h2 {
+    margin-bottom: 20px;
+  }
+  .price-list ul li {
+    padding: 15px 0px;
+  }
+  .price-list-waarper {
+    margin-bottom: 40px;
+  }
+}

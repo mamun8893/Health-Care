@@ -12,6 +12,7 @@ import ServiceDetails from "./components/ServiceDetails/ServiceDetails";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Contact from "./components/Contact/Contact";
 import Appointment from "./components/Appointment/Appointment";
+import Price from "./components/Price/Price";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <PrivateRoute path="/appointment">
               <Appointment></Appointment>
+            </PrivateRoute>
+            <PrivateRoute path="/price">
+              <Price></Price>
             </PrivateRoute>
             <PrivateRoute path="/service-details/:serviceId">
               <ServiceDetails></ServiceDetails>

@@ -22,6 +22,9 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/appointment">
               Appointment
             </Nav.Link>
+            <Nav.Link as={NavLink} to="/price">
+              Price
+            </Nav.Link>
             {user.email ? (
               <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
             ) : (
