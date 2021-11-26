@@ -4,8 +4,8 @@ It is a single page application made with ReactJS, React Bootstrap,Route, Fireba
 
 #### Project Featured:
 
-- Load Data from json file and show all Service in UI
-- Use Custom Hooks
+- Health care services website with user login system
+- User can view service details
 - Use Route
 - Use Private Route
 - Firebase Authentication
